@@ -1,0 +1,104 @@
+/* styles.css */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  background-color: pink;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.header-nav {
+  margin-top: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ddd;
+}
+
+.section {
+  padding: 40px;
+  background-color: #fff;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 32px;
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.music-list {
+  list-style: none;
+  padding: 0;
+}
+
+.music-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.button {
+  background-color: pink;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin: 0;
+}

@@ -9,16 +9,30 @@
   <style>
     /* Center the parent container */
     .container {
-      display: flex;
+      margin-top: 80px;
       justify-content: center;
       align-items: center;
       height: 100vh; /* Optional: Adjust to your layout requirements */
+      width: 100vh;
     }
 
     /* Style the gray box */
     aside {
       background-color: #f0f0f0; /* Gray background color */
       padding: 20px; /* Add padding for spacing */
+    }
+
+    .flex-container {
+      display: flex; /* Use flexbox for horizontal layout */
+      flex-wrap: nowrap; /* Prevent items from wrapping to the next row */
+      justify-content: space-between; /* Space between items */
+    }
+
+    .product {
+      flex: 0 0 auto; /* Prevent items from growing or shrinking */
+      width: 30%; /* Adjust the width as needed */
+      margin: 10px; /* Add margin to create spacing between items */
+      text-align: center; /* Center the content horizontally */
     }
   </style>
   <body>
@@ -27,42 +41,43 @@
     </header>
 
     <main>
-      <section class="product">
-        <img src="product1.jpg" alt="Product 1" />
-        <h2>Product 1</h2>
-        <p>A cute hat</p>
-        <p>Price: $10.00</p>
-        <button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
-      </section>
+      <div class="flex-container">
+        <section class="product">
+          <img src="hat.jpg" alt="Product 1" />
+          <h2>Hat 1</h2>
+          <p>A cute hat</p>
+          <p>Price: $10.00</p>
+          <button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
+        </section>
 
-      <section class="product">
-        <img src="product2.jpg" alt="Product 2" />
-        <h2>Product 2</h2>
-        <p>Description of Product 2.</p>
-        <p>Price: $15.00</p>
-        <button onclick="addToCart('Product 2', 15.00)">Add to Cart</button>
-      </section>
+        <section class="product">
+          <img src="hat.jpg" alt="Product 2" />
+          <h2>Hat 2</h2>
+          <p>A cute hat</p>
+          <p>Price: $15.00</p>
+          <button onclick="addToCart('Product 2', 15.00)">Add to Cart</button>
+        </section>
+
+        <section class="product">
+          <img src="hat.jpg" alt="Product 3" />
+          <h2>Hat 3</h2>
+          <p>A cute hat</p>
+          <p>Price: $15.00</p>
+          <button onclick="addToCart('Product 2', 15.00)">Add to Cart</button>
+        </section>
+      </div>
+
+      <div class="container">
+        <aside>
+          <h2>Shopping Cart</h2>
+          <ul id="cart">
+            <!-- Cart items will be displayed here -->
+          </ul>
+          <p>Total: $<span id="total">0.00</span></p>
+        </aside>
+      </div>
     </main>
 
-    <section class="product">
-      <img src="product2.jpg" alt="Product 2" />
-      <h2>Product 2</h2>
-      <p>Description of Product 2.</p>
-      <p>Price: $15.00</p>
-      <button onclick="addToCart('Product 2', 15.00)">Add to Cart</button>
-    </section>
-  </main>
-
-    <div class="container">
-      <aside>
-        <h2>Shopping Cart</h2>
-        <ul id="cart">
-          <!-- Cart items will be displayed here -->
-        </ul>
-        <p>Total: $<span id="total">0.00</span></p>
-      </aside>
-    </div>
-
-    <script src="shop_script.js"></script>
+    <script src="shop_scripts.js"></script>
   </body>
 </html>
